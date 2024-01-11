@@ -69,5 +69,5 @@ The interrogative alone followed by the particles अपि, चन, or चि�
 Adding the negation particle न to either of the above constructions indicates absolute exclusion.
 
 मह्यं किंचिद्वदति। (He tells me something.)
-कस्मिणश्चिन्नगरे वसति स्म नृपः। (The king lived in a / some city.)
+कस्मिंश्चिन्नगरे वसति स्म नृपः। (The king lived in a / some city.)
 न कश्चन शृणोति माम्। (Nobody listens to me.)
