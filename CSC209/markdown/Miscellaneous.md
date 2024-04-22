@@ -1,17 +1,3 @@
-#### Makefiles
-Makefiles consist of a sequence of rules specifying the target, i.e. the file to be constructed, the dependencies, and the recipe, i.e. the list of commands required to create the target. The recipe is executed if either the target doesn't exist ot one or more of the dependencies are newer than the target.
-```MAKEFILE
-target: dependency_1 dependeny_2...
-	recipe
-```
-
-The command `make` is used to run the Makefile. If no command line arguments are passed, only the first rule will be evaluated. However, if a command line argument is passed, then it will evaluate the rule for that target. If the rule contains dependencies and the dependencies are also targets in the Makefile, then those rules will be evaluated first.
-
-Makefiles also support name wildcards and variables.
-
-[More information can be found here]([http://www.gnu.org/software/make/manual/make.html](http://www.gnu.org/software/make/manual/make.html))
-
----
 #### The `,` (Comma) Operator
 The `,` (comma) operator is a binary operator. It first evaluates the its left operand, discards its value, and then evaluates its right operand. The value of the right operand is the value of the overall expression.
 
@@ -81,11 +67,10 @@ Declaration, definition and initialisation `int i = 0;`
 
 Variables declared in the body of a function belong exclusively to that function; they can't be examined or modified by other functions. In C89, variable declarations must come first, before all statements in the body of a function. In C99, variable declarations and statements can be mixed, as long as each variable is declared prior to the first statement that uses the variable.
 
-In C99, the keyword `static` can be used to specify the minimum expected length of an array argument
+In C99, the keyword `static` can be used to specify the minimum expected length of an array argument. This may help the compiler optimise the code better.
 ```c
 void function(int array[static 5]) {}
 ```
-This may help the compiler optimise the code better.
 
 The compiler flag `-Werror=vla` can be used to generate an error for using variable length arrays.
 
@@ -94,3 +79,6 @@ Vim mapping `map <F8> :!gcc -Wall % -o %< && ./%< <CR>`
 Use the `cdecl` program to understand casts and declarations.
 
 ---
+
+cut, sort, uniq, `kill` and `fg` command line utilities to send signals
+`ps aux` to get pids
